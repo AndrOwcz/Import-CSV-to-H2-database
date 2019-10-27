@@ -1,0 +1,23 @@
+Zadanie
+Napisać w Javie prostą web aplikację, która umożliwia upload pliku tekstowego (CSV) zawierającego dane użytkowników.
+Zawartość pliku powinna zostać wczytana, przetworzona i przechowana w pamięci (mile widziana pamięciowa baza danych np. H2),
+tak aby możliwe było wyświetlenie informacji o użytkownikach takich jak:
+- ile jest użytkowników łącznie
+- lista użytkowników posortowana po wieku (dane do wypisania: imię, nazwisko, wiek, nr. tel), mile widziana paginacja wyników (domyślnie: 5 per strona)
+- najstarszy użytkownik z numerem telefonu
+Upload kolejnego pliku powinien dodawać użytkowników do istniejącego zbioru, powinna też być opcja usunięcia z pamięci wybranego użytkownika bądź całej ich listy.
+Mile widziana możliwość wyszukiwania użytkowników po nazwisku.
+
+Przykładowy plik dostępny do pobrania tutaj: https://pastebin.com/raw/miWfmfVX
+Plik jest bardzo kiepskiej jakości. Należy przyjąć założenia:
+- imię, nazwisko i data urodzenia są danymi 'obowiązkowymi' dla każdego użytkownika
+- numer telefonu powinien składać się z dziewięciu cyfr
+- numer telefonu powinien być unikalny (nie jest dopuszczalna sytuacja, w której dwóch użytkowników ma ten sam nr. tel)
+Wszelkie problemy wynikające z zawartości pliku należy obsłużyć wedle uznania.
+
+Aplikacja może zawierać proste frontendy (html/css), ale nie musi - może to być też "gołe" REST API prezentujące dane w postaci xml czy json.
+
+Na co warto dodatkowo zwrócić uwagę:
+- obsługa błędów i wyjątków
+- logowanie zdarzeń
+- wykorzystanie dodatkowych bibliotek (mile widziane - nie ma sensu pisać funkcjonalności, które załatwiają biblioteki czy frameworki)
